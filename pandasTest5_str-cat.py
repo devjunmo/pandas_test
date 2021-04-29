@@ -13,7 +13,7 @@ print(df)
 # 특정 열에 해당하는 값들에 대해 내가 원하는 문자열 결합하기
 print(df['name'].str.cat(['결합', '하려는', '리스트'], sep=' -_- '))
 # print(df['name'].str.cat(df['age'], sep='')) # 불가
-
+print(df)
 # 플러스 연산자로 문자열 결합하기
 print(df['name'] + ' in ' + df['state'])
 df['뉴컬럼'] = df['name'] + ' in ' + df['state']
@@ -23,6 +23,7 @@ print(df['name'] + ' 하 ' + df['state'] + ' - ' + ["가", "나", "다"])
 
 # 문자열과 숫자 합치기
 print(df['name'].str.cat(map(str, [10, 20, 30]), sep='-'))
+
 
 
 

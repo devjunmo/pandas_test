@@ -43,7 +43,7 @@ print(df.replace({'age':{24:100}}))
 print(df.replace({'age': 24, 'point': 70}, 1000))
 
 
-
+os.system('cls')
 
 
 
