@@ -41,15 +41,15 @@ for col_name, items in df.iteritems(): # items는 각 컬럼의 내용을 시리
 # 행 단위 출력. Name값은 행이름. 행단위로 착착착 루핑
 print('행단위 출력')
 for index, rows in df.iterrows(): # 행이 2개니까 두번 돈다
-    print("type(index)", type(index))
-    print("index", index)
+    print("type(index) =", type(index))
+    print("index =", index)
 
-    print("type(rows)", type(rows))
-    print("rows", rows)
+    print("type(rows) =", type(rows))
+    print("rows =", rows)
 
-    print("rows['point']", rows['point']) # 세번째 열에 대한 행을 추출. 즉 한 요소만 추출 64 -> 92
-    print("rows[2]", rows[2])
-    print("rows.point", rows.point)
+    print("rows['point'] =", rows['point']) # 세번째 열에 대한 행을 추출. 즉 한 요소만 추출 64 -> 92
+    print("rows[2] =", rows[2])
+    print("rows.point =", rows.point)
     print('==========\n')
 
 

@@ -56,8 +56,11 @@ print(ex_df.iloc[1])
 열2    5
 열3    6
 Name: 행2, dtype: int64"""
+ex_df
 
 print(ex_df.iloc[1, 2])  # 6
+
+print(ex_df.iloc[0, 0])  # 6
 
 
 ex_df = pd.DataFrame([[1, 2, 3],
