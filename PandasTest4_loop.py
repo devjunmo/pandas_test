@@ -53,6 +53,8 @@ for index, rows in df.iterrows(): # 행이 2개니까 두번 돈다
     print('==========\n')
 
 
+df
+
 # frame.Pandas형으로 가져와보기
 # 간편한 자료구조로 핸들링가능. 0번째: 인덱스, 
 print('frame.Pandas형으로 가져오기') 
