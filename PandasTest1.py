@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 
 ex_df = pd.DataFrame([[1,2,3],
@@ -11,7 +12,7 @@ tmp = ex_df.columns
 print(tmp)
 print([i.title() for i in tmp])
 
-exit(0)
+# exit(0)
 print(ex_df["열1"])
 """
 행1    1
@@ -27,6 +28,9 @@ print(ex_df) # 예상대로 출력
 행1   1   2   3    10
 행2   4   5   6  test
 행3   7   8   9    -9 """
+
+ex_df.loc['행1', 'new_empty열'] = 10
+ex_df
 
 # ex_df["new열2_over"] = [10, "test", -9, 10] # 에러
 # print(ex_df)

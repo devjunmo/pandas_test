@@ -21,9 +21,11 @@ print(df1.iloc[i[0], 0])
 
 # df1.drop(i[0], inplace=True)
 # df1
-
+df1
 df1.drop(i, inplace=True)
 df1 
+df1.reset_index(inplace=True, drop=True)
+df1
 """
     A   B   C
 1  A2  B2  C2
