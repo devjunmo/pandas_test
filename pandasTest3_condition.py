@@ -19,6 +19,17 @@ print(df_mask)
 2  Charlie   18    CA     70
 4    Ellen   24    CA     88"""
 
+s_mask = pd.Series(mask)
+
+print(df[-s_mask])
+
+"""
+    name  age state  point
+1    Bob   42    CA     92
+3   Dave   68    TX     70
+5  Frank   30    NY     57
+"""
+
 # 여러 조건 사용해보기 - 단순하게 T/F로만 리턴 <- 인덱스
 print(df['age'] < 35) # age열에 대해 모든행 bool값으로 리턴
 print(~(df['state'] == 'NY')) # state열에 모든행 bool값으로 리턴

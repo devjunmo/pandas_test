@@ -38,7 +38,9 @@ print(df2)
 
 i = df2[(df2["A"] == "A2") | (df2["B"] == "B3")].index
 
-i
+print(i)
+
+print(df2.loc[i, 'A'])
 
 
 i = df2[(df2["A"] != "A3") & (df2["A"] != "A1")].index # Int64Index([1], dtype='int64')

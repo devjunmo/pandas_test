@@ -20,6 +20,10 @@ print(ex_df["열1"])
 행3    7
 Name: 열1, dtype: int64
 """
+# print(ex_df["열1", "열2"]) # 에러
+
+ex_df.loc[:, ['열1', '열2']] # 모든 행에 대하여 특정 열 출력
+
 
 ex_df["new열1"] = [10, "test", -9]
 print(ex_df) # 예상대로 출력
