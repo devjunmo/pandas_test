@@ -15,14 +15,21 @@ print(df1)
 
 i = df1[df1["A"] != "A2"].index
 i # Int64Index([0, 2], dtype='int64') <- 인덱스 리스트 형태로 리턴됨
+l_i = list(i)
+l_i
 i[0]
 i[1]
 print(df1.iloc[i[0], 0])
 
 # df1.drop(i[0], inplace=True)
 # df1
+# df1
+# df1.drop(i, inplace=True)
+# df1 
+# df1.reset_index(inplace=True, drop=True)
+# df1
 df1
-df1.drop(i, inplace=True)
+df1.drop(l_i, inplace=True)
 df1 
 df1.reset_index(inplace=True, drop=True)
 df1

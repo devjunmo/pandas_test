@@ -42,3 +42,8 @@ empty3
 empty3.loc['exon', 'snp2'] = empty3.loc['exon', 'snp2'] + 10 # NaN에 
 
 empty3
+
+
+# 참고
+# res_df.loc[df_idx] = [chr, start, end, 'variant_not_exist'] 
+# 요런 느낌으로도 가능함.
