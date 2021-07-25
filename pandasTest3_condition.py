@@ -32,7 +32,8 @@ print(df[-s_mask])
 
 # 여러 조건 사용해보기 - 단순하게 T/F로만 리턴 <- 인덱스
 print(df['age'] < 35) # age열에 대해 모든행 bool값으로 리턴
-print(~(df['state'] == 'NY')) # state열에 모든행 bool값으로 리턴
+print((df['state'] == 'NY')) # state열에 모든행 bool값으로 리턴
+print(~(df['state'] == 'NY')) # state열에 모든행 역 bool값으로 리턴
 print((df['age'] < 35) & (df['state'] == 'NY')) # 합쳐진 '하나의' 열에 모든 행 bool값으로 리턴
 
 # 여러 조건 사용해보기 - 취득한 인덱스를 바탕으로 데이터를 출력하기
